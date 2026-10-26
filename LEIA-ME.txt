@@ -1,0 +1,25 @@
+FITLIVRE V2 — AVALIAÇÃO E TREINOS
+=================================
+
+NOVIDADES
+- Avaliação inicial: objetivo, experiência, local, tempo por sessão, dias por semana, equipamentos e adaptações que a pessoa deseja considerar.
+- Sugestão de rotina com base no objetivo informado (força geral, resistência, mobilidade ou criação de hábito).
+- Demonstrações ilustradas e animadas, com instruções textuais para cada exercício.
+- Cronômetro de descanso de 30 segundos, com iniciar/pausar e zerar.
+- Histórico, minutos, sessões, dias ativos, checklist e exportação dos dados.
+- Migração automática dos dados locais da versão 1 para a versão 2 quando ambas forem usadas no mesmo navegador e origem.
+- Cache PWA atualizado para uso offline depois da primeira abertura via HTTPS/localhost.
+
+PRIVACIDADE E CUSTO
+Sem conta, publicidade, assinatura, pagamento ou envio de dados para servidor. O histórico fica no armazenamento local do navegador/dispositivo. Amigos podem instalar suas próprias cópias; os dados não são compartilhados entre aparelhos.
+
+COMO TESTAR
+1. Extraia a pasta FitLivre.
+2. Para testar funções básicas, abra index.html em um navegador moderno.
+3. Para instalar como PWA e testar offline, publique os arquivos em hospedagem estática HTTPS (ou use localhost). O service worker não funciona em file://.
+
+LIMITAÇÕES E SEGURANÇA
+A avaliação é um questionário de preferências, não é avaliação médica nem diagnóstico. As demonstrações são esquemáticas e não substituem orientação profissional. Adapte o esforço ao seu conforto; pare em caso de dor, tontura ou mal-estar. Se houver lesão ou condição de saúde, procure orientação profissional antes de iniciar.
+
+VERSÃO
+FitLivre 2.0 — pacote web/PWA. Não é APK Android nativo; a instalação é feita pelo navegador em HTTPS.
