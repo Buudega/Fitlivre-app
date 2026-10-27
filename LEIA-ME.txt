@@ -33,8 +33,8 @@ REFERÊNCIAS
 - Demonstração de flexão na parede fornecida pelo usuário: https://www.youtube.com/shorts/8lxxv7JKqpE
 
 
-Demonstrações principais: os movimentos com correspondência validada carregam três quadros SVG da biblioteca Workout Guide. Não existe uma ilustração correspondente para todos os exercícios; quando falta correspondência, a interface informa isso em vez de sugerir uma variação diferente. Para o primeiro download é necessário estar online; use o botão “Baixar imagens para usar sem internet”. As imagens salvas ficam disponíveis no mesmo navegador e dispositivo. Créditos e termos de uso estão em LICENCA-ILUSTRACOES.md.
+Demonstrações principais: os movimentos com correspondência validada carregam três quadros PNG da biblioteca Workout Guide. Não existe uma ilustração correspondente para todos os exercícios; quando falta correspondência, a interface informa isso em vez de sugerir uma variação diferente. Para o primeiro download é necessário estar online; use o botão “Baixar imagens para usar sem internet”. As imagens salvas ficam disponíveis no mesmo navegador e dispositivo. Créditos e termos de uso estão em LICENCA-ILUSTRACOES.md.
 
-Demonstrações por imagens: o movimento de sentar e levantar foi substituído por agachamento livre. Os movimentos com correspondência fiel usam três quadros SVG da biblioteca Workout Guide. O download offline guarda os 30 quadros licenciados no navegador deste dispositivo.
+Demonstrações por imagens: o movimento de sentar e levantar foi substituído por agachamento livre. Os movimentos com correspondência fiel usam três quadros PNG da biblioteca Workout Guide. O download offline guarda até 33 quadros licenciados no navegador deste dispositivo.
 
-Exibição atual: as poses licenciadas aparecem lado a lado em três quadros (começo, movimento e volta). No celular, deslize entre os quadros. Para uso offline, pré-carregue as imagens neste navegador.
+Exibição atual: as poses licenciadas aparecem lado a lado em três quadros (começo, movimento e volta). No celular, deslize entre os quadros. Para uso offline, pré-carregue as imagens PNG neste navegador.
