@@ -1,0 +1,5 @@
+FITLIVRE — PATCH DE DEMONSTRAÇÕES EM VÍDEO
+
+Para atualizar o GitHub Pages, substitua na raiz do repositório os arquivos index.html e sw.js pelos deste pacote e faça commit. Não remova os outros arquivos do app (motion3d.js, three.min.js, manifest.webmanifest, icon.svg e demais arquivos).
+
+A tela de demonstração agora prioriza um vídeo correspondente ao movimento e oculta a sequência de imagens que estava vazia. Cada vídeo abre no player incorporado do YouTube; requer internet e pode depender das permissões ou disponibilidade do canal. O link direto e a busca por outros vídeos continuam disponíveis. O service worker recebeu uma versão nova para atualizar o cache do navegador.
