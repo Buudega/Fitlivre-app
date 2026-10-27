@@ -1,7 +1,7 @@
 {
-  "name": "FitLivre v2 — Avaliação e Treinos",
+  "name": "FitLivre — Plano Pessoal",
   "short_name": "FitLivre",
-  "description": "Treinos, avaliação inicial e progresso, gratuitos e privados.",
+  "description": "Treinos variados e personalizados à sua rotina.",
   "lang": "pt-BR",
   "start_url": "./index.html",
   "scope": "./",

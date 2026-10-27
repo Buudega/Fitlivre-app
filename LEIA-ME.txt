@@ -1,25 +1,40 @@
-FITLIVRE V2 — AVALIAÇÃO E TREINOS
-=================================
+FITLIVRE — PLANO PESSOAL
+========================
 
-NOVIDADES
-- Avaliação inicial: objetivo, experiência, local, tempo por sessão, dias por semana, equipamentos e adaptações que a pessoa deseja considerar.
-- Sugestão de rotina com base no objetivo informado (força geral, resistência, mobilidade ou criação de hábito).
-- Demonstrações ilustradas e animadas, com instruções textuais para cada exercício.
-- Cronômetro de descanso de 30 segundos, com iniciar/pausar e zerar.
-- Histórico, minutos, sessões, dias ativos, checklist e exportação dos dados.
-- Migração automática dos dados locais da versão 1 para a versão 2 quando ambas forem usadas no mesmo navegador e origem.
-- Cache PWA atualizado para uso offline depois da primeira abertura via HTTPS/localhost.
+COMO USAR
+1. Extraia o ZIP.
+2. Abra index.html em um navegador moderno. Para instalação PWA, use HTTPS ou localhost.
+3. Responda ao questionário, gere seu plano semanal e escolha o dia da sessão.
+4. Abra “Ver movimento” para ver a animação 3D própria, as instruções e o link de vídeo de referência pelo nome do exercício.
+   Para navegar pelos 21 movimentos em uma tela, abra galeria-3d.html.
+5. Marque os movimentos concluídos e toque em “Registrar sessão concluída”.
 
-PRIVACIDADE E CUSTO
-Sem conta, publicidade, assinatura, pagamento ou envio de dados para servidor. O histórico fica no armazenamento local do navegador/dispositivo. Amigos podem instalar suas próprias cópias; os dados não são compartilhados entre aparelhos.
+DEMONSTRAÇÕES
+- O FitLivre agora gera ciclos em 3D com um modelo humano articulado próprio para os 21 movimentos do catálogo. A galeria-3d.html permite selecionar todos em sequência. Cada exercício divide a execução em três passos: preparação, movimento e retorno. Toque em cada passo para pausar o boneco naquela pose; use os botões Próximo/Anterior para seguir a explicação. Arraste para girar a câmera e use Pausar/Reproduzir para ver o ciclo completo. O personagem usa proporções e detalhes anatômicos simplificados, materiais de roupa/pele, rosto e calçado mais definidos e sombras melhores; continua estilizado e precisa de revisão profissional antes de orientar um lançamento público.
+- A animação 3D é geométrica estilizada, não captura de movimento nem modelo anatômico; os vídeos de referência ficam disponíveis como apoio complementar.
+- A flexão na parede pode exibir o Short enviado como referência. Se o embed falhar, o link abre o vídeo diretamente.
+- O botão de vídeo leva a uma busca externa pelo nome exato; não seleciona automaticamente vídeos de terceiros sem curadoria de execução e direitos.
+- Os GIFs ExerciseDB foram desativados por sua licença de uso não comercial. O motor 3D Three.js está incluído localmente no pacote (licença MIT; crédito e termos em THREE-LICENSE.txt). O renderizador WebGL requer navegador compatível.
+- A auditoria completa de cobertura e licenças está em AUDITORIA-DEMONSTRACOES.md.
 
-COMO TESTAR
-1. Extraia a pasta FitLivre.
-2. Para testar funções básicas, abra index.html em um navegador moderno.
-3. Para instalar como PWA e testar offline, publique os arquivos em hospedagem estática HTTPS (ou use localhost). O service worker não funciona em file://.
+PERSONALIZAÇÃO E PRIVACIDADE
+- O plano varia por objetivo, experiência, faixa etária, local, duração, dias escolhidos, equipamento e adaptações indicadas.
+- O questionário é de preferências e não é avaliação médica. Se houver lesão, condição de saúde, gravidez ou dor, procure orientação profissional antes de começar.
+- Perfil, plano, marcações e histórico ficam no armazenamento local do navegador. Use “Exportar dados” para fazer uma cópia.
 
-LIMITAÇÕES E SEGURANÇA
-A avaliação é um questionário de preferências, não é avaliação médica nem diagnóstico. As demonstrações são esquemáticas e não substituem orientação profissional. Adapte o esforço ao seu conforto; pare em caso de dor, tontura ou mal-estar. Se houver lesão ou condição de saúde, procure orientação profissional antes de iniciar.
+REFERÊNCIAS
+- Three.js r128, renderizador WebGL (código incluído localmente; licença MIT em THREE-LICENSE.txt): https://threejs.org/docs/pages/WebGLRenderer.html
+- NHS, exemplos de sentar e levantar, agachamento, panturrilha, flexão na parede e rosca: https://www.nhs.uk/live-well/exercise/strength-exercises/
+- NHS, vídeos de referência de força e flexibilidade: https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/
+- ACE, biblioteca de exercícios e padrões de movimento: https://www.acefitness.org/resources/everyone/exercise-library/
+- NHS, exercícios de força / sentar e levantar: https://www.nhs.uk/live-well/exercise/strength-exercises/
+- South Tees Hospitals, técnica de sentar e levantar: https://www.southtees.nhs.uk/resources/sit-to-stand-from-chair-combined/
+- OMS, diretrizes de atividade física: https://www.who.int/europe/publications/i/item/9789240014886
+- Demonstração de flexão na parede fornecida pelo usuário: https://www.youtube.com/shorts/8lxxv7JKqpE
 
-VERSÃO
-FitLivre 2.0 — pacote web/PWA. Não é APK Android nativo; a instalação é feita pelo navegador em HTTPS.
+
+Demonstrações principais: os movimentos com correspondência validada carregam três quadros SVG da biblioteca Workout Guide. Não existe uma ilustração correspondente para todos os exercícios; quando falta correspondência, a interface informa isso em vez de sugerir uma variação diferente. Para o primeiro download é necessário estar online; use o botão “Baixar imagens para usar sem internet”. As imagens salvas ficam disponíveis no mesmo navegador e dispositivo. Créditos e termos de uso estão em LICENCA-ILUSTRACOES.md.
+
+Demonstrações por imagens: o movimento de sentar e levantar foi substituído por agachamento livre. Os movimentos com correspondência fiel usam três quadros SVG da biblioteca Workout Guide. O download offline guarda os 30 quadros licenciados no navegador deste dispositivo.
+
+Exibição atual: as poses licenciadas aparecem lado a lado em três quadros (começo, movimento e volta). No celular, deslize entre os quadros. Para uso offline, pré-carregue as imagens neste navegador.
