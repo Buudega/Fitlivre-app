@@ -1,40 +1,23 @@
-FITLIVRE — PLANO PESSOAL
-========================
+FITLIVRE — PATCH DE SEGURANÇA E RECUPERAÇÃO
 
-COMO USAR
-1. Extraia o ZIP.
-2. Abra index.html em um navegador moderno. Para instalação PWA, use HTTPS ou localhost.
-3. Responda ao questionário, gere seu plano semanal e escolha o dia da sessão.
-4. Abra “Ver movimento” para ver a animação 3D própria, as instruções e o link de vídeo de referência pelo nome do exercício.
-   Para navegar pelos 21 movimentos em uma tela, abra galeria-3d.html.
-5. Marque os movimentos concluídos e toque em “Registrar sessão concluída”.
+ARQUIVOS DO PATCH
+- index.html (substituir na raiz do main)
+- app.js (novo arquivo na raiz)
+- sw.js (substituir na raiz do main)
 
-DEMONSTRAÇÕES
-- O FitLivre agora gera ciclos em 3D com um modelo humano articulado próprio para os 21 movimentos do catálogo. A galeria-3d.html permite selecionar todos em sequência. Cada exercício divide a execução em três passos: preparação, movimento e retorno. Toque em cada passo para pausar o boneco naquela pose; use os botões Próximo/Anterior para seguir a explicação. Arraste para girar a câmera e use Pausar/Reproduzir para ver o ciclo completo. O personagem usa proporções e detalhes anatômicos simplificados, materiais de roupa/pele, rosto e calçado mais definidos e sombras melhores; continua estilizado e precisa de revisão profissional antes de orientar um lançamento público.
-- A animação 3D é geométrica estilizada, não captura de movimento nem modelo anatômico; os vídeos de referência ficam disponíveis como apoio complementar.
-- A flexão na parede pode exibir o Short enviado como referência. Se o embed falhar, o link abre o vídeo diretamente.
-- O botão de vídeo leva a uma busca externa pelo nome exato; não seleciona automaticamente vídeos de terceiros sem curadoria de execução e direitos.
-- Os GIFs ExerciseDB foram desativados por sua licença de uso não comercial. O motor 3D Three.js está incluído localmente no pacote (licença MIT; crédito e termos em THREE-LICENSE.txt). O renderizador WebGL requer navegador compatível.
-- A auditoria completa de cobertura e licenças está em AUDITORIA-DEMONSTRACOES.md.
+APLICAÇÃO
+Envie os três arquivos para a raiz do repositório Buudega/Fitlivre-app na branch main. Preserve todos os outros arquivos existentes, incluindo motion3d.js, three.min.js, manifest.webmanifest e icon.svg. Aguarde o GitHub Pages publicar e reabra o app; no celular, feche a aba antiga e abra o endereço novamente.
 
-PERSONALIZAÇÃO E PRIVACIDADE
-- O plano varia por objetivo, experiência, faixa etária, local, duração, dias escolhidos, equipamento e adaptações indicadas.
-- O questionário é de preferências e não é avaliação médica. Se houver lesão, condição de saúde, gravidez ou dor, procure orientação profissional antes de começar.
-- Perfil, plano, marcações e histórico ficam no armazenamento local do navegador. Use “Exportar dados” para fazer uma cópia.
+PROTEÇÃO E RECUPERAÇÃO
+- Plano, histórico e marcações usam AES-256-GCM.
+- Uma chave aleatória de dados é protegida por senha mestra e por uma chave de recuperação independentes. A derivação usa PBKDF2-SHA-256 com 600.000 iterações.
+- A chave de recuperação tem 160 bits aleatórios. Ela aparece uma vez na criação/migração; o app pede confirmação de que foi guardada antes de gravar a proteção. Ela não é armazenada no navegador.
+- Se esquecer a senha, use a chave de recuperação para definir outra. A chave continua válida.
+- A chave também pode restaurar um backup criptografado em outro aparelho e permitir definir uma nova senha.
+- Dados do app em formato antigo e envelopes criptografados v1 são migrados sem apagar a origem antes da confirmação da nova gravação.
+- Backups exportados continuam criptografados. O service worker usa cache v37.
 
-REFERÊNCIAS
-- Three.js r128, renderizador WebGL (código incluído localmente; licença MIT em THREE-LICENSE.txt): https://threejs.org/docs/pages/WebGLRenderer.html
-- NHS, exemplos de sentar e levantar, agachamento, panturrilha, flexão na parede e rosca: https://www.nhs.uk/live-well/exercise/strength-exercises/
-- NHS, vídeos de referência de força e flexibilidade: https://www.nhs.uk/live-well/exercise/strength-and-flex-exercise-plan-how-to-videos/
-- ACE, biblioteca de exercícios e padrões de movimento: https://www.acefitness.org/resources/everyone/exercise-library/
-- NHS, exercícios de força / sentar e levantar: https://www.nhs.uk/live-well/exercise/strength-exercises/
-- South Tees Hospitals, técnica de sentar e levantar: https://www.southtees.nhs.uk/resources/sit-to-stand-from-chair-combined/
-- OMS, diretrizes de atividade física: https://www.who.int/europe/publications/i/item/9789240014886
-- Demonstração de flexão na parede fornecida pelo usuário: https://www.youtube.com/shorts/8lxxv7JKqpE
+MUITO IMPORTANTE
+Guarde a senha mestra, a chave de recuperação e o backup criptografado em local seguro. Se perder a senha e a chave de recuperação, os dados não podem ser recuperados. Não salve a chave de recuperação no próprio navegador/app.
 
-
-Demonstrações principais: os movimentos com correspondência validada carregam três quadros SVG da biblioteca Workout Guide. Não existe uma ilustração correspondente para todos os exercícios; quando falta correspondência, a interface informa isso em vez de sugerir uma variação diferente. Para o primeiro download é necessário estar online; use o botão “Baixar imagens para usar sem internet”. As imagens salvas ficam disponíveis no mesmo navegador e dispositivo. Créditos e termos de uso estão em LICENCA-ILUSTRACOES.md.
-
-Demonstrações por imagens: o movimento de sentar e levantar foi substituído por agachamento livre. Os movimentos com correspondência fiel usam três quadros SVG da biblioteca Workout Guide. O download offline guarda até 33 quadros licenciados no navegador deste dispositivo.
-
-Exibição atual: as poses licenciadas aparecem lado a lado em três quadros (começo, movimento e volta). No celular, deslize entre os quadros. Para uso offline, pré-carregue as imagens vetoriais neste navegador.
+A criptografia protege dados armazenados quando o app está bloqueado. Não protege contra malware, extensões maliciosas ou uso do dispositivo enquanto o app está desbloqueado. A primeira carga da nova versão exige conexão HTTPS; depois, o app shell pode funcionar offline.
