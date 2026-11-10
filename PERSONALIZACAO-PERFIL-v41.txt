@@ -1,0 +1,17 @@
+FITLIVRE v2 — PERSONALIZAÇÃO DE PERFIL v41
+
+Incluído:
+- Seleção de modelo das demonstrações: feminino, masculino ou neutro.
+- Preferências musculares editáveis: pernas, glúteos/quadril, peito/tríceps, costas/bíceps, ombros, core e condicionamento.
+- Sugestões iniciais de prioridades ao trocar o modelo: feminino (glúteos/quadril, pernas, costas e core); masculino (peito/tríceps, costas/bíceps, ombros e pernas). São apenas sugestões editáveis, não restrições.
+- Preferências salvas no perfil e restauradas ao editar.
+- O gerador passa a priorizar movimentos já disponíveis no catálogo que correspondam às preferências selecionadas, sem excluir outros grupos.
+- Resumo do plano identifica o modelo selecionado.
+
+Limitação importante:
+- Nesta versão, o campo de modelo e a personalização do plano estão implementados, mas o personagem 3D ainda não foi substituído por malhas anatômicas masculina/feminina. Isso requer criar/adquirir modelos 3D próprios, rigging e animações específicas, com licença adequada e revisão biomecânica.
+- O catálogo de exercícios continua limitado aos movimentos existentes; não inventar exercício para grupo muscular sem movimento compatível.
+
+Validação:
+- app.js e motion3d.js passaram em node --check.
+- Necessário testar o fluxo de cadastro, edição de perfil e geração de plano no navegador.
