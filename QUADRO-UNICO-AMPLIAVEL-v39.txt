@@ -1,0 +1,12 @@
+FITLIVRE v2 — QUADRO ÚNICO AMPLIÁVEL (v39)
+
+- Mantida uma única área de demonstração 3D; não são exibidos três quadros simultâneos.
+- Adicionado botão Ampliar no próprio quadro.
+- Ao ampliar, a demonstração ocupa quase toda a tela; botão muda para Reduzir.
+- Tecla Esc fecha a visualização ampliada.
+- Canvas é redimensionado ao abrir/fechar para manter a cena nítida.
+- Atualizado cache do service worker para v39.
+
+Validação técnica:
+- JavaScript verificado com node --check.
+- Requer teste visual em navegador desktop e celular.

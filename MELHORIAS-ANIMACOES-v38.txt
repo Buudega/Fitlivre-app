@@ -1,0 +1,14 @@
+FITLIVRE v2 — MELHORIAS DE ANIMAÇÃO 3D (v38)
+
+Alterações:
+- Ciclo com início estável, fase de execução, pequena pausa na posição final e retorno controlado.
+- Duração de repetição ampliada para facilitar a observação.
+- Ângulo de câmera em três quartos para enxergar melhor profundidade e alinhamento.
+- Ajustes de postura em agachamento, dobradiça de quadril, ponte de glúteos, desenvolvimento e círculos de braços.
+- Cache do service worker atualizado para evitar servir a animação antiga.
+
+Validação:
+- Sintaxe JavaScript verificada com node --check.
+- Ainda é necessária inspeção visual em navegadores/dispositivos reais.
+- O personagem continua sendo uma representação 3D estilizada, não captura de movimento.
+- Os ajustes são melhorias didáticas preliminares; não equivalem à validação biomecânica por profissional habilitado.
